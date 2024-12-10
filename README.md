@@ -27,9 +27,9 @@ Features of a Smart Society Management System (SSMS):
 
 Goals of a Smart Society Management System:
 
-1.Streamlined Operations: Simplify and automate routine tasks for society administrators and staff.
-2.Enhanced Security: Provide robust and smart security measures for a safer living environment.
-3.Resident Empowerment: Promote transparency and convenience for residents in daily interactions and management.
-4.Community Engagement: Foster a sense of belonging and participation through effective communication tools.
-5.Sustainability: Integrate eco-friendly practices to reduce the environmental footprint of the society.
-6.Cost Efficiency: Reduce manual effort and operational costs with automation and optimized resource usage.
+1. Streamlined Operations: Simplify and automate routine tasks for society administrators and staff.
+2. Enhanced Security: Provide robust and smart security measures for a safer living environment.
+3. Resident Empowerment: Promote transparency and convenience for residents in daily interactions and management.
+4. Community Engagement: Foster a sense of belonging and participation through effective communication tools.
+5. Sustainability: Integrate eco-friendly practices to reduce the environmental footprint of the society.
+6. Cost Efficiency: Reduce manual effort and operational costs with automation and optimized resource usage.
