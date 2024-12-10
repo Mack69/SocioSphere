@@ -1,4 +1,5 @@
-#SocioSphere
+# SocioSphere
+
 A Smart Society Management System (SSMS) is a technology-driven platform designed to streamline and enhance the management of residential societies or communities. It integrates various features like automated billing, visitor management, facility booking, maintenance tracking, and communication tools to promote efficiency and convenience.By leveraging IoT and AI, it ensures better security, energy management, and real-time updates. This system fosters a connected community, making day-to-day management more transparent, eco-friendly, and resident-centric.
 
 Features of a Smart Society Management System (SSMS):
