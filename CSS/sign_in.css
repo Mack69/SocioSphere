@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #020410;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 12%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar a{
+    position: relative;
+    font-family: poppins;
+    font-size: 15px;
+    color: #2f2f2f;
+    top:10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.navbar a i{
+    margin-right: 10px;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #484848;
+    border: 4px;
+    bottom: -4px;
+    transform: translateY(5px);
+    transition: .7s;
+    opacity: 0;
+}
+
+.navbar a:hover::after{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(186, 182, 252, 0.8),rgba(255, 252, 255, 0.2)), url('/Resources/Bg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); */
+}
+
+.container{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) ;
+    width: 75%;
+    height: 525px;
+    background:linear-gradient(rgba(164, 160, 245, 0.8),rgba(171, 165, 165, 0.573)), url('/Resources/Bg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+    
+}
+
+.container .content{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    padding: 75px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.content .logo{
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: Vast Shadow;
+}
+
+.text-info h2{
+    font-size: 35px;
+    font-family: poppins;
+    line-height: 1.5;
+
+}
+
+.text-info h2 span{
+    font-size: 25px;
+}
+
+.text-info p{
+    font-family: poppins;
+    font-size: 14px;
+    margin: 20px 0;
+}
+.social-icons a i{
+    font-size: 20px;
+    color:rgb(240, 73, 39);
+    margin-right: 15px;
+}
+.social-icons a i:hover{
+    transform: scale(1.35);
+    transition: 0.2s;
+}
+
+.container .log-reg-box{
+    position: absolute;
+    top:0;
+    right:0;
+    width: calc(100% - 60%);
+    height: 100%;
+    background-color:transparent;
+    overflow: hidden;
+
+}
+
+.log-reg-box .form{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    backdrop-filter: blur(8px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+} 
+
+.form h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: poppins;
+}
+
+.form .input-box{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid rgb(128, 128, 128);
+    margin: 30px 0;
+}
+
+.input-box input{
+    margin-left: 2px;
+    font: 15px sans-serif;
+    color:rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding-right: 35px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #484747;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-family: poppins;
+    pointer-events: none;
+    margin-left: 2px;
+    transition: .5s ease;
+
+}
+.input-box input:focus~label, 
+.input-box input:valid~label{
+    top: -5px;
+
+}
+
+.input-box .icon{
+    position:absolute;
+    top: 15px;
+    right: 0;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #4b4a4a;
+}
+
+.form .remember-forget{
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 500px;
+    margin: -15px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #242424;
+}
+
+.remember-forget label input{
+    accent-color: #e4e4e4;
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: #242424;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+.Logbtn{
+    width: 100%;
+    height: 40px;
+    background:linear-gradient(rgb(208, 193, 248),rgb(152, 140, 211));
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: poppins;
+    color: #f3f1f1;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.form .register{
+    font-size: 13px;
+    text-align: center; 
+    margin-top: 25px;
+    font-family: poppins;
+}
+
+.register p a{
+
+    color: #242424;
+    text-decoration: none;
+    font-weight: 800;
+    
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.log-reg-box .form.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+    transition-delay: .7s;
+}
+
+.log-reg-box.active .form.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+.log-reg-box .form.signup{
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+
+.log-reg-box.active .form.signup{
+    transform: translateX(0px);
+    transition-delay: .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

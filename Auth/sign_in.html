@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioSphere</title>
+    <link rel="stylesheet" href="/CSS/sign_in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+        </nav>
+    </header>
+    <div class="background">
+
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class="fa-solid fa-building" style="padding-right:5px;"></i> Socio-Sphere</h2>  
+            
+            <div class="text-info">
+                <h2>Welcome !! <br><span>To Smart Society Management System</span></h2>
+                <p>A Smart Society Management System (SSMS) is a technology-driven platform designed to streamline and enhance the management of residential societies or communities.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="log-reg-box">
+                <div class="form login">
+                    <form action="#">
+                        <h2>Sign In</h2>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required>
+                            <label for="Email">Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="remember-forget">
+                            <label><input type="checkbox">Remember Me</label>
+                            <a href="#">Forget Password ?</a>
+                        </div>
+                        
+                        <button class="Logbtn" type="submit">Login</button>
+                        <div class="register">
+                            <p>Don't have an Account ?
+                            <a class="register-link" href="#">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form signup">
+                    <form action="#">
+                        <h2>Sign Up </h2>
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" required>
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required>
+                            <label for="Email">Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <!-- <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required>
+                            <label for="password">Confirm Password</label>
+                        </div> -->
+
+
+                        <div class="remember-forget">
+                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        
+                        <button class="Logbtn" type="submit">Sign Up</button>
+                        <div class="register">
+                            <p>Already have an Account ?
+                            <a class="login-link" href="#">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <script src="/Auth/sign_in.js"></script>
+</body>
+</html>
