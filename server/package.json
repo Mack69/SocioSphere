@@ -1,0 +1,15 @@
+{
+  "name": "sociosphere",
+  "version": "1.0.0",
+  "description": "A Smart Society Management System (SSMS) is a technology-driven platform designed to streamline and enhance the management of residential societies or communities. It integrates various features like automated billing, visitor management, facility booking, maintenance tracking, and communication tools to promote efficiency and convenience.By leveraging IoT and AI, it ensures better security, energy management, and real-time updates. This system fosters a connected community, making day-to-day management more transparent, eco-friendly, and resident-centric.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2"
+  }
+}
