@@ -1,15 +1,15 @@
 import './App.css'
 import { Routes,Route } from 'react-router-dom'
-import LoginAuth from './components/LoginAuth'
+import Home from './components/Home'
+import Login from './components/Login'
 
 function App() {
   return (
     <>
-    <nav>
       <Routes>
-        <Route path ='/' element={LoginAuth}/>
+        <Route path ='/' element={<Home/>}/>
+        <Route path='/Login' element={<Login/>}/>
       </Routes>
-    </nav>
     </>
   )
 }
