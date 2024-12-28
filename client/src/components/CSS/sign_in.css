@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Vast+Shadow&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-}
-
-body{
-    background: #020410;
 }
 
 .header{
@@ -17,7 +15,7 @@ body{
     padding: 20px 12%;
     background:transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -59,7 +57,7 @@ body{
 .background{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(rgba(186, 182, 252, 0.8),rgba(255, 252, 255, 0.2)), url('/client/src/assets/Bg.jpg')no-repeat;
+    background:linear-gradient(rgba(186, 182, 252, 0.8),rgba(255, 252, 255, 0.2)), url('/images/Bg.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     /* filter: blur(5px); */
@@ -73,7 +71,7 @@ body{
     transform: translate(-50%,-50%) ;
     width: 75%;
     height: 525px;
-    background:linear-gradient(rgba(164, 160, 245, 0.8),rgba(171, 165, 165, 0.573)), url('/Resources/Bg.jpg')no-repeat;
+    background:linear-gradient(rgba(164, 160, 245, 0.8),rgba(171, 165, 165, 0.573)), url('/images/Bg.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 15px;
@@ -96,6 +94,7 @@ body{
 }
 
 .content .logo{
+    padding-left: 0px;
     font-size: 28px;
     letter-spacing: 1px;
     font-family: Vast Shadow;
@@ -120,7 +119,7 @@ body{
 .social-icons a i{
     font-size: 20px;
     color:rgb(240, 73, 39);
-    margin-right: 15px;
+    margin-right: 30px;
 }
 .social-icons a i:hover{
     transform: scale(1.35);
@@ -128,7 +127,7 @@ body{
 }
 
 .container .log-reg-box{
-    position: absolute;
+    position:absolute;
     top:0;
     right:0;
     width: calc(100% - 60%);
@@ -137,6 +136,11 @@ body{
     overflow: hidden;
 
 }
+
+  .form.active {
+    opacity: 1;
+    visibility: visible;
+  }
 
 .log-reg-box .form{
     position: absolute;
@@ -265,32 +269,6 @@ body{
 .register p a:hover{
     text-decoration: underline;
 }
-
-.log-reg-box .form.login{
-    transform: translateX(0);
-    transition: transform .6s ease;
-    transition-delay: .7s;
-}
-
-.log-reg-box.active .form.login{
-    transform: translateX(430px);
-    transition-delay: 0s;
-}
-
-.log-reg-box .form.signup{
-    transform: translateX(430px);
-    transition: transform .6s ease;
-    transition-delay: 0s;
-}
-
-.log-reg-box.active .form.signup{
-    transform: translateX(0px);
-    transition-delay: .7s;
-}
-
-
-
-
 
 
 
