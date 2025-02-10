@@ -9,7 +9,7 @@ function Login() {
     <div className="background">
       <div className="header">
         <div className="navbar" style={{ justifyContent: 'left', paddingBottom: '20px' }}>
-          <a href="/index.html">
+          <a href="#">
             <i className="fa-solid fa-house"></i>Home
           </a>
           <a href="#">

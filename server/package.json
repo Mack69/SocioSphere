@@ -4,12 +4,19 @@
   "description": "A Smart Society Management System (SSMS) is a technology-driven platform designed to streamline and enhance the management of residential societies or communities. It integrates various features like automated billing, visitor management, facility booking, maintenance tracking, and communication tools to promote efficiency and convenience.By leveraging IoT and AI, it ensures better security, energy management, and real-time updates. This system fosters a connected community, making day-to-day management more transparent, eco-friendly, and resident-centric.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.2"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.0",
+    "nodemon": "^3.1.9"
   }
 }
