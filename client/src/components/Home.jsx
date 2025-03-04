@@ -14,13 +14,13 @@ function Home() {
       </div>
       {/* Menu Section */}
       <div className="menu">
-        <a href="#"><i className="fa-solid fa-house"></i> <p style={{color:"black"}}>Home</p></a>
+        <a href="/admin_dashboard.html" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-house" ></i> <p style={{color:"black"}}>Home</p></a>
         <a href="#"><i className="fa-solid fa-circle-info"></i> <p style={{color:"black"}}>About</p></a>
         <a href="#"><i className="fa-solid fa-envelope"></i> <p style={{color:"black"}}>Contact</p></a>
       </div>
       {/* Admin Section */}
       <div className="admin">
-        <a href="#" style={{ marginRight: "50px",color:"black" }}>Admin</a>
+        <a href="/admin_dashboard.html" target="_blank" rel="noopener noreferrer" style={{ marginRight: "50px",color:"black" }}>Admin</a>
       </div>
     </div>
     <div className='description'>

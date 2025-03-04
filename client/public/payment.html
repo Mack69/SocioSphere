@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Payment Request</title>
+    <link rel="stylesheet" href="payment_request.css" />
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .nav-links .add-btn,
+      .nav-links .request-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .nav-links .request-btn {
+        background-color: #e2e6ea;
+        color: #333;
+      }
+
+      .nav-links .add-btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* Main Container */
+      .container {
+        padding: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      /* Payment Form */
+      .payment-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .payment-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .payment-form select,
+      .payment-form input,
+      .payment-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .date-fields {
+        display: flex;
+        gap: 10px;
+      }
+
+      .date-fields div {
+        flex: 1;
+      }
+
+      .payment-form textarea {
+        resize: none;
+      }
+
+      .payment-form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .payment-form button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Neighborhood</div>
+      <nav class="nav-links">
+        <a href="#">Dashboard</a>
+        <a href="#">Members</a>
+        <a href="#">Payments</a>
+        <a href="#">Reports</a>
+        <button class="add-btn">Add member</button>
+        <button class="request-btn">Create a request</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Create a payment request</h1>
+
+      <form class="payment-form">
+        <!-- User Selection -->
+        <label for="user">Select a user</label>
+        <select id="user" required>
+          <option value="" disabled selected>Search for a user</option>
+          <option value="user1">User 1</option>
+          <option value="user2">User 2</option>
+        </select>
+
+        <!-- Unit Selection -->
+        <label for="unit">Select a unit</label>
+        <select id="unit" required>
+          <option value="" disabled selected>Search for a unit</option>
+          <option value="unit1">Unit 1</option>
+          <option value="unit2">Unit 2</option>
+        </select>
+
+        <!-- Dates -->
+        <div class="date-fields">
+          <div>
+            <label for="start-date">Start date</label>
+            <input type="date" id="start-date" required />
+          </div>
+          <div>
+            <label for="end-date">End date</label>
+            <input type="date" id="end-date" required />
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <h3>Payment details</h3>
+        <input type="number" placeholder="Enter the amount" required />
+        <textarea
+          placeholder="Enter a description (optional)"
+          rows="4"
+        ></textarea>
+
+        <!-- Due Date -->
+        <label for="due-date">Due date</label>
+        <input type="date" id="due-date" required />
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Request</button>
+      </form>
+    </main>
+  </body>
+</html>
