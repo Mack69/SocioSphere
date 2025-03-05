@@ -8,7 +8,7 @@ const errorHandling = require("./middlewares/errorHandling");
 // Middlewares
 app.use(express.json());
 app.use("/api/auth", authRoute);
-app.use(errorHandling);
+// app.use(errorHandling);
 
 const PORT = 5000;
 
