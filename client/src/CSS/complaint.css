@@ -1,0 +1,44 @@
+.complaints-container {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .sort-section {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f0f0f0;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .status.open {
+    background-color: #28a745;
+  }
+  
+  .close-ticket {
+    color: #dc3545;
+    cursor: pointer;
+  }
+  
+  .close-ticket:hover {
+    text-decoration: underline;
+  }

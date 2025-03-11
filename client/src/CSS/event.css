@@ -1,0 +1,61 @@
+.events-container {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .main-content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .calendar {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendar-grid div {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar-grid .active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .events-list {
+    flex: 1;
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-item i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
