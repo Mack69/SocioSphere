@@ -7,7 +7,8 @@ import Booking from "./pages/Booking";
 import Complaint from "./pages/Complaint";
 import Event from "./pages/Event";
 import Payment from "./pages/Payment";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile"; 
+import Contact from "./pages/Contact";
 import Navbar from "./components/navbar";
 
 function App() {
@@ -24,7 +25,7 @@ function AppContent() {
   const location = useLocation();
 
   // Show Navbar on all pages except Login
-  const showNavbar = !["/Login", "/"].includes(location.pathname);
+  const showNavbar = !["/Login","/contact","/"].includes(location.pathname);
 
   return (
     <>
@@ -32,6 +33,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/event" element={<Event />} />

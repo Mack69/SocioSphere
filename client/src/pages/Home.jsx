@@ -14,9 +14,9 @@ function Home() {
       </div>
       {/* Menu Section */}
       <div className="menu">
-        <a href="/admin_dashboard.html" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-house" ></i> <p style={{color:"black"}}>Home</p></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-house" ></i> <p style={{color:"black"}}>Home</p></a>
         <a href="#"><i className="fa-solid fa-circle-info"></i> <p style={{color:"black"}}>About</p></a>
-        <a href="#"><i className="fa-solid fa-envelope"></i> <p style={{color:"black"}}>Contact</p></a>
+        <Link to="/contact">Contact Us</Link>
       </div>
       {/* Admin Section */}
       <div className="admin">
